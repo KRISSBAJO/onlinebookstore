@@ -31,8 +31,13 @@ pipeline{
         stage(TestCases){
             steps{
                sh 'mvn test'
+            }            
+        }
+        stage('Deploy'){
+            steps{
+                echo 'Job Ready For Deployment'
+                
             }
-            
         }
     }
 } 
