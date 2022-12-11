@@ -36,6 +36,7 @@ pipeline{
         stage('Deploy'){
             steps{
                 echo 'Job Ready For Deployment'
+                echo 'We are almost done'
                 
             }
         }
